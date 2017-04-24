@@ -1,0 +1,21 @@
+.navbar{
+border-radius: 0px;
+}
+.jumbotron{
+  text-align: center;
+
+}
+.thumbnail img:hover{
+  transform: scale(1.1);
+}
+.thumbnail img {
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+.thumbnail{
+  overflow: hidden;
+  text-align: center;
+}
+#panelbody{
+  padding: 10px;
+}
