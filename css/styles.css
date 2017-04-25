@@ -19,3 +19,6 @@ border-radius: 0px;
 #panelbody{
   padding: 10px;
 }
+.receipt {
+       display: none;
+     }

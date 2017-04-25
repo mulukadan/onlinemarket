@@ -42,32 +42,44 @@
               </div>
             </div>
             <div class="col-md-8">
-              <div class="panel panel-info">
+              <div class="panel panel-primary">
                 <div class="panel-heading">
                   User Details
                 </div>
                 <div id="panelbody">
-                  Please Fill all the fields!
-                  <form class="" action="index.html" method="post">
-                    <div class="form-group">
-                      <label for="FullName">Full Name</label>
-                      <input type="text" name="" value="" class="form-control" placeholder="Enter Full name:">
-                    </div>
-                    <div class="form-group">
-                      <label for="Address">Address</label>
-                      <input type="text" name="" value="" class="form-control" placeholder="Enter Address:">
-                    </div>
-                    <button type="submit" name="button">Submit</button>
+                <div class="user">
+                  <p> Please Fill all the fields!</p>
+                  <br>
+                    <form class="form-horizontal" action="index.html" method="post">
+                      <div class="form-group">
+                        <label for="fullname" class="control-label col-sm-2">Full Name</label>
+                        <div class="col-sm-10">
+                          <input type="text" id="fullname" value="" class="form-control" placeholder="Enter Full name:">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="address" class="control-label col-sm-2">Address</label>
+                        <div class="col-sm-10">
+                          <input type="text" id="address" value="" class="form-control" placeholder="Address:">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                       <div class="col-sm-offset-2 col-sm-10">
+                         <button type="submit" class="btn btn-default">Submit</button>
+                       </div>
+                      </div>
 
-                  </form>
+                    </form>
+                </div><!-- </div> end of form -->
+                <div class="receipt">
+                  <h2>Hi, <span class="fullname"></span></h2>
+                  <p>Your purchase has been received</p>
+                  <p>it will be dilivered to the follpwing address:</p>
+                  <span class="address"></span>
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
     </div>
 
 
