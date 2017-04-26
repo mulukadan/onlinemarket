@@ -9,7 +9,7 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-
+    <script src="js/deco.js"></script>
   </head>
   <body>
 
@@ -35,53 +35,209 @@
             <h4>Where Everything sells</h4>
           </div>
           <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                  <img src="img/h.jpg" alt="Hammer">
-                  <h2>Hammer 2017</h2>
+            <div class="col-md-8">
+            <div id="mainview">
+              <!-- <div class="thumbnail">
+                  <img src="img/C1.jpg" alt="Hammer">
+              </div> -->
+              <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="carousel-caption">
+                      <h1>Powerful!</h1>
+                    </div>
+                    <img src="img/C1.jpg" alt="...">
+                  </div>
+                  <div class="item">
+                    <img src="img/C2.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Beautiful</h1>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/C3.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Economical</h1>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/C4.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Fast and Powerful</h1>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="img/C5.jpg" alt="...">
+                    <div class="carousel-caption">
+                      <h1>Beautiful and Comfortable</h1>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+              </div> <!-- Carousel -->
+            </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="thumbnail" >
+                      <img data-toggle="magnify" src="img/C2.jpg" alt="Hammer">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail" >
+                      <img data-toggle="magnify" src="img/C3.jpg" alt="Hammer">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="thumbnail ">
+                      <img data-toggle="magnify" src="img/C4.jpg" alt="Hammer">
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class=" thumbnail">
+                      <img data-toggle="magnify" src="img/C5.jpg" alt="Hammer">
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-4">
               <div class="panel panel-primary">
                 <div class="panel-heading">
-                  User Details
+                  <h3>User Details</h3>
                 </div>
                 <div id="panelbody">
                 <div class="user">
-                  <p> Please Fill all the fields!</p>
-                  <br>
-                    <form class="form-horizontal" action="index.html" method="post">
+                  <form class="form-horizontal" action="index.html" method="post">
                       <div class="form-group">
-                        <label for="fullname" class="control-label col-sm-2">Full Name</label>
-                        <div class="col-sm-10">
+                        <label for="fullname" class="control-label col-sm-4">Full Name</label>
+                        <div class="col-sm-8">
                           <input type="text" id="fullname" value="" class="form-control" placeholder="Enter Full name:">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="address" class="control-label col-sm-2">Address</label>
-                        <div class="col-sm-10">
-                          <input type="text" id="address" value="" class="form-control" placeholder="Address:">
+                        <label for="address" class="control-label col-sm-4">Address</label>
+                        <div class="col-sm-8">
+                          <input type="text" id="address" value="" class="form-control" placeholder="Physical Address:">
                         </div>
                       </div>
                       <div class="form-group">
-                       <div class="col-sm-offset-2 col-sm-10">
-                         <button type="submit" class="btn btn-default">Submit</button>
+                        <label for="address" class="control-label col-sm-4">Email:</label>
+                        <div class="col-sm-8">
+                          <input type="email" id="email" value="" class="form-control" placeholder="Email Address:">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label class="col-sm-4 control-label">Delivary Date</label>
+                          <div class="col-sm-8 date">
+                              <input type="date" id="myDate" value="" class="form-control glyphicon glyphicon-calendar">
+                          </div>
+                      </div>
+                      <hr>
+                      <h4>Car Details</h4>
+
+                      <div class="form-group">
+                        <label for="address" class=" col-sm-4 control-label">Transmission:</label>
+                        <div class=" col-sm-8">
+                          <div class="radio">
+                              <label><input type="radio" name="optradio" value="Automatic" checked="checked">Automatic</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="optradio" value="Manual">Manual</label>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                          <label for="address" class=" col-sm-4 control-label">Car Colour:</label>
+                          <div class=" col-sm-8">
+                            <div class="radio">
+                                <label><input type="radio" name="carcolour" value="Black" checked="checked">Black</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="carcolour" value="White">White</label>
+                              </div>
+                              <div class="radio">
+                                <label><input type="radio" name="carcolour" value="Red">Red</label>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="address" class=" col-sm-4 control-label">Car Fuel:</label>
+                        <div class=" col-sm-8">
+                          <div class="radio">
+                              <label><input type="radio" name="carFuel" value="Petrol" checked="checked">Petrol</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="carFuel" value="Diesel" disabled>Diesel</label>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                       <div class="col-sm-offset-8 col-sm-4">
+                         <button type="submit" class="btn btn-success">Submit</button>
                        </div>
                       </div>
-
                     </form>
                 </div><!-- </div> end of form -->
                 <div class="receipt">
                   <h2>Hi, <span class="fullname"></span></h2>
-                  <p>Your purchase has been received</p>
-                  <p>it will be dilivered to the follpwing address:</p>
-                  <span class="address"></span>
+                  <p id="scs">Your purchase has been Successful!</p>
+                  <p>Your Car Details are:</p>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Detail</th>
+                        <th>Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><strong>Name</strong></td>
+                        <td>Celica 2017</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Manufacturer</strong></td>
+                        <td>Toyota</td>
+                      </tr>
+                      <tr>
+                        <td><strong>Transmission</strong></td>
+                        <td><span class="carType"></span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Colour</strong></td>
+                        <td><span class="carColour"></span></td>
+                      </tr>
+                      <tr>
+                        <td><strong>Fuel</strong></td>
+                        <td><span class="carFuel"></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>A copy of the above details have been emailed to you at:
+                  <span class="email"></span></p>
+                  <p>The car will be delivered to you at the following address:</p>
+                  <span class="address"></span> on: <span class="date"></span>
+                  <p><h2>Thank you!</h2></p>
+                  <a href="index.html">Back...</a>
                 </div>
               </div>
             </div>
           </div>
     </div>
-
-
   </body>
 </html>

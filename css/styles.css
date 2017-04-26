@@ -3,7 +3,11 @@ border-radius: 0px;
 }
 .jumbotron{
   text-align: center;
-
+  height: 100px;
+  padding: 0px;
+  margin-bottom: 5px;
+  margin-top: -44px;
+  background-color: #97b9fc;
 }
 .thumbnail img:hover{
   transform: scale(1.1);
@@ -13,8 +17,11 @@ border-radius: 0px;
   width: 100%;
 }
 .thumbnail{
-  overflow: hidden;
+  //overflow: hidden;
   text-align: center;
+}
+.panel-heading{
+  padding: 5px;
 }
 #panelbody{
   padding: 10px;
@@ -22,3 +29,51 @@ border-radius: 0px;
 .receipt {
        display: none;
      }
+#mainview{
+  height: 380px;
+}
+
+
+.mag {
+    width:200px;
+    margin: 0 auto;
+    float: none;
+}
+
+.mag img {
+    max-width: 100%;
+}
+
+.magnify {
+    position: relative;
+    cursor: none
+}
+
+.magnify-large {
+    position: absolute;
+    display: none;
+    width: 175px;
+    height: 175px;
+
+    -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+       -moz-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
+
+    -webkit-border-radius: 100%;
+       -moz-border-radius: 100%;
+             border-radius: 100%
+}
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    color: white;
+    text-shadow: 1px;
+}
+.email{
+  color: blue;
+}
+#scs{
+  color: green;
+  font-size: 20px;
+  text-align: center;
+}

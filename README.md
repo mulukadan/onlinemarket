@@ -1,10 +1,9 @@
-# Ping pong
+# Online Market Place
 
-It is a site which allows a user to enter a number, then return output from number 1 to the user's entered number as follows:
 
-  - Numbers divisible by 3, it outputs 'Ping'.
-  - Numbers divisible by 5, it outputs 'Pong'.
-  - Numbers divisible by 3 & 5, it outputs 'PingPong'.
+a website with a form on it to take the user's full name and address as if they were ordering a product from you. After they submit the form you will show them a receipt. Thank them for purchasing, and use their full name. Then, reprint their address as a confirmation of shipping details.
+
+
 
 # Author:
 
