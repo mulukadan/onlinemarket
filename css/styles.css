@@ -77,3 +77,8 @@ border-radius: 0px;
   font-size: 20px;
   text-align: center;
 }
+.footer{
+  text-align: center;
+  color: white;
+  padding: 8px;
+}
